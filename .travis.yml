@@ -1,0 +1,12 @@
+language: generic
+sudo: required
+
+services:
+    -docker
+
+before_install:
+    - docker build -t ljaji/docker-react-tester -f Dockerfile.dev .
+
+script:
+    - docker run -e CI=true ljaji/docker-react-tester npm run test
+  
