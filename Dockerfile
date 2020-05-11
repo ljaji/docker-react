@@ -13,4 +13,4 @@ CMD ["npm", "run", "start"]
 #second section for multi-step container
 FROM nginx
 EXPOSE 80
-COPY --from=0 /var/opt/react/build /usr/share/nginx/html
+COPY --from=0 /var/opt/react/build/ /usr/share/nginx/html/.
