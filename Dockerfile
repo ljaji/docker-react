@@ -1,4 +1,6 @@
-FROM node:alpine as builder
+#FROM node:alpine as builder
+FROM node:alpine
+
 
 WORKDIR /var/opt/react
 
